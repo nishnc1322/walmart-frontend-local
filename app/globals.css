@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 11% 29%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 11% 29%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 11% 29%;
+    --primary: 207 100% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 17% 97%;
+    --secondary-foreground: 210 11% 29%;
+    --muted: 210 17% 97%;
+    --muted-foreground: 210 11% 29%;
+    --accent: 45 100% 56%;
+    --accent-foreground: 210 11% 29%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 17% 90%;
+    --input: 210 17% 90%;
+    --ring: 207 100% 40%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 210 11% 15%;
+    --foreground: 0 0% 98%;
+    --card: 210 11% 15%;
+    --card-foreground: 0 0% 98%;
+    --popover: 210 11% 15%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 207 100% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 11% 20%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 210 11% 20%;
+    --muted-foreground: 210 11% 65%;
+    --accent: 45 100% 56%;
+    --accent-foreground: 210 11% 15%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 11% 20%;
+    --input: 210 11% 20%;
+    --ring: 207 100% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-walmart;
+  }
+}
+
+/* Walmart-specific styles */
+.walmart-gradient {
+  background: linear-gradient(135deg, #0071ce 0%, #004c91 100%);
+}
+
+.walmart-yellow-gradient {
+  background: linear-gradient(135deg, #ffc220 0%, #ffb000 100%);
+}
+
+.walmart-shadow {
+  box-shadow: 0 2px 8px rgba(0, 113, 206, 0.15);
+}
+
+.walmart-shadow-lg {
+  box-shadow: 0 4px 16px rgba(0, 113, 206, 0.2);
+}
